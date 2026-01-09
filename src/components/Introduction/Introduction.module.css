@@ -1,12 +1,53 @@
 .introductionSection {
-    margin-top: 200px;
-    backdrop-filter: blur();
+    margin-top: 250px;
 }
 
-.introductionText {
+.aboutMe {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.introductionText1 {
     display: flex;
     justify-content: center;
     max-width: 550px;
     margin: 0 auto;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: slideIn 0.3s ease-out 0.2s forwards;
+}
+
+.introductionText2 {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideIn 0.3s ease-out 0.3s forwards;
+}
+
+.introductionText3 {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideIn 0.3s ease-out 0.4s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
