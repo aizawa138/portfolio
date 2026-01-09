@@ -1,0 +1,12 @@
+.introductionSection {
+    margin-top: 200px;
+    backdrop-filter: blur();
+}
+
+.introductionText {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,11 @@
+@import "./assets/fonts/inter.css";
+
+body {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.05rem;
+  color: hsla(0, 0%, 0%, 0.85);
+  line-height: 32px;
+}
