@@ -1,7 +1,6 @@
 import styles from "./Card.module.css";
 import React, {useState} from "react";
 import fishImage from "../../assets/images/IMG_1099.jpg";
-import desktopImage from "../../assets/images/Screenshot 2025-12-28 172333.png"
 
 function Card(props) {
 
