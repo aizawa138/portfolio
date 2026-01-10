@@ -1,6 +1,7 @@
 import styles from "./Card.module.css";
 import React, {useState} from "react";
 import fishImage from "../../assets/images/IMG_1099.jpg";
+import desktopImage from "../../assets/images/Screenshot 2025-12-28 172333.png"
 
 function Card(props) {
 
@@ -21,8 +22,10 @@ function Card(props) {
     return (
         <>
             <div className={styles.card} onClick={() => setIsClicked(true)}>
+                <img src={fishImage} alt="project-image" className={styles.cardImage} />
                 <div className={styles.cardTextContainer}>
-                    <h1 className={styles.projectName}>Project 1</h1>
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sit eius officiis sint exercitationem modi.</p>
                 </div>
             </div>
 
