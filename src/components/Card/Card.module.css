@@ -1,6 +1,40 @@
 .card {
     display: flex;
-    width: 40vw;
+    flex-direction: column;
+    width: 35vw;
     background-color: white;
     border-radius: 10px;
+    padding: 20px 32px;
+    border: 2px solid hsl(0, 0%, 90%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;     
+}
+
+.detail {
+    background: white;
+    padding: 8% 8%;
+    width: 600px;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+    overflow-y: auto;  
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: slideUp 0.3s ease-out; 
+}
+
+.card:hover {
+    background-color: hsl(0, 0%, 95%);
 }
