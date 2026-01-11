@@ -1,5 +1,6 @@
 import styles from "./Achievements.module.css";
 import Card from "../Card/Card";
+import { CARD_DATA } from "../../data/projects.js";
 
 function Achievements() {
 
@@ -9,9 +10,9 @@ function Achievements() {
                 <p>Projects</p>
             </div>
             <div className={styles.cardList}>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
+                {CARD_DATA.map((info, index) => {
+                    return <Card key={index} image={info.image} title={info.title} text={info.text}></Card>
+                })}
             </div>
         </div>
     );
