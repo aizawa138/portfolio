@@ -1,9 +1,8 @@
 .achievementsBody {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: hsl(252, 30%, 95%);
-    margin: 250px 0;
+    margin: 250px auto;
     padding: 120px 0;
 }
 
@@ -13,11 +12,14 @@
     margin-bottom: 4rem;
     font-weight: bold;
     font-size: 2rem;
+    align-self: center;
 }
 
 .cardList {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: -15vw;
+    transition: transform 0.3s ease;
 }

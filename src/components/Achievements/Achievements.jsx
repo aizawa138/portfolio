@@ -1,6 +1,6 @@
 import styles from "./Achievements.module.css";
 import Card from "../Card/Card";
-import { CARD_DATA } from "../../data/projects.js";
+import { CARD_DATA } from "../../data/data.js";
 
 function Achievements() {
 
