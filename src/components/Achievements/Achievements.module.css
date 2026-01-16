@@ -21,9 +21,8 @@
 .cardList {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 3vw;
     scroll-behavior: smooth;
-    margin-left: -15vw;
     transition: transform 0.3s ease;
 }
 

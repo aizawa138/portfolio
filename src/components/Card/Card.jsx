@@ -1,6 +1,7 @@
 import styles from "./Card.module.css";
 import React, {useState} from "react";
 import fishImage from "../../assets/images/IMG_1099.jpg";
+import { createPortal } from "react-dom";
 
 function Card(props) {
 
@@ -28,7 +29,7 @@ function Card(props) {
                 </div>
             </div>
 
-            {isClicked && detailDisplay}
+            {isClicked && createPortal(detailDisplay, document.body)}
         </>
     );
 
