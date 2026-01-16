@@ -1,6 +1,7 @@
 import styles from "./Card.module.css";
 import React, {useState} from "react";
 import fishImage from "../../assets/images/IMG_1099.jpg";
+import { createPortal } from "react-dom";
 
 function Card(props) {
 
@@ -21,14 +22,14 @@ function Card(props) {
     return (
         <>
             <div className={styles.card} onClick={() => setIsClicked(true)}>
-                <img src={fishImage} alt="project-image" className={styles.cardImage} />
+                <img src={props.image} alt="project-image" className={styles.cardImage} />
                 <div className={styles.cardTextContainer}>
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sit eius officiis sint exercitationem modi.</p>
+                    <h3>{props.title}</h3>
+                    <p>{props.text}</p>
                 </div>
             </div>
 
-            {isClicked && detailDisplay}
+            {isClicked && createPortal(detailDisplay, document.body)}
         </>
     );
 

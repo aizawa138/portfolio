@@ -1,9 +1,11 @@
+@import '../../assets/fonts/manrope.css';
+
 .achievementsBody {
     display: flex;
+    position: relative;
     flex-direction: column;
-    align-items: center;
     background-color: hsl(252, 30%, 95%);
-    margin: 250px 0;
+    margin: 250px auto;
     padding: 120px 0;
 }
 
@@ -13,11 +15,59 @@
     margin-bottom: 4rem;
     font-weight: bold;
     font-size: 2rem;
+    align-self: center;
 }
 
 .cardList {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    overflow: hidden;
+    gap: 3vw;
+    scroll-behavior: smooth;
+    transition: transform 0.3s ease;
+}
+
+.arrowButtonLeft {
+    font-family: "Manrope";
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    position: absolute;
+    top: 60vh;
+    left: 2vw;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    background-color: rgba(44, 44, 44, 0.6);
+    backdrop-filter: blur(8px);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrowButtonRight {
+    font-family: "Manrope";
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    position: absolute;
+    top: 60vh;
+    right: 2vw;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    background-color: rgba(44, 44, 44, 0.6);
+    backdrop-filter: blur(8px);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrowButtonLeft:hover, .arrowButtonRight:hover {
+    background-color: rgba(44, 44, 44, 0.7);
 }
