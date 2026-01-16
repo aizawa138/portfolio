@@ -14,6 +14,8 @@ function Achievements() {
                     return <Card key={index} image={info.image} title={info.title} text={info.text}></Card>
                 })}
             </div>
+                <button className={styles.arrowButtonLeft}>&lt;</button>
+                <button className={styles.arrowButtonRight}>&gt;</button>
         </div>
     );
 
