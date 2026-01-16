@@ -71,3 +71,39 @@
 .arrowButtonLeft:hover, .arrowButtonRight:hover {
     background-color: rgba(44, 44, 44, 0.7);
 }
+
+.cardNumbering {
+    position: absolute;
+    top: 92vh;
+    align-self: center;
+    display: flex;
+    max-width: 450px;
+    height: 2vh;
+    width: auto;
+    background-color: rgba(44, 44, 44, 0.6);
+    border-radius: calc(1vh + 5px);
+    backdrop-filter: blur(8px);
+    padding: 4px 12px;
+}
+
+.cardDot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 158, 158);
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    margin: auto 5px;
+}
+
+.cardSelected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    margin: auto 5px;
+}

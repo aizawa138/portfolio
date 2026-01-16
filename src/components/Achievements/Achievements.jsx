@@ -62,6 +62,19 @@ function Achievements() {
             </div>
             <button className={styles.arrowButtonLeft} onClick={handleArrowLeft}>&lt;</button>
             <button className={styles.arrowButtonRight} onClick={handleArrowRight}>&gt;</button>
+            <div className={styles.cardNumbering}>
+                {[...Array(CARD_DATA.length)].map((_, index) => {
+
+                    let activeIndex = slide;
+                    if (slide === 0) activeIndex = CARD_DATA.length;
+                    if (slide === CARD_DATA.length + 1) activeIndex = 1;
+                    const isSelected = activeIndex === index + 1;
+
+                    return (
+                        <div key={index} className={isSelected ? styles.cardSelected : styles.cardDot}></div>
+                    );
+                })}
+            </div>
         </div>
     );
 
