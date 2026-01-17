@@ -26,14 +26,20 @@
 .detail {
     position: fixed;
     background: white;
-    padding: 8% 8%;
-    width: 600px;
-    max-width: 90%;
+    max-width: 60vw;
     max-height: 80vh;
     border-radius: 1.5rem;
-    overflow-y: auto;  
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    animation: slideUp 0.3s ease-out; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailContent {
+    padding: 16% 16%;
+    margin-right: 2px;
+    overflow-y: auto;
+    flex: 1;
 }
 
 .card:hover {
