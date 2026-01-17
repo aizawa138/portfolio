@@ -1,3 +1,4 @@
+[English](README.md) ・ [日本語](README-ja.md)
 # Daigo Kitagawa's Portfolio
 Daigo Kitagawa's portfolio website introducing projects of which I have created.
 
